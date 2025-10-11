@@ -7,23 +7,25 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-build-mode = "both"
-excluded-patches = ""
+build-mode = "apk"
+excluded-patches = "'Theme'"
 included-patches = ""
+patcher-args = "-e 'Change package name' -OpackageName=cmccwm.mobilemusic"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Music]
-build-mode = "both"
+enabled = false
+build-mode = "apk"
 arch = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [GooglePhotos]
-build-mode = "both"
+build-mode = "apk"
 arch = "both"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
@@ -36,13 +38,15 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
 
 # https://github.com/j-hc/revanced-magisk-module/issues/554
 [Music-Extended]
-enabled = false
+enabled = true
 app-name = "Music"
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
-build-mode = "both"
+build-mode = "apk"
 arch = "both"
+excluded-patches = "'Dark theme'"
+patcher-args = "-e 'GmsCore support' -OpackageNameYouTubeMusic=com.hiby.music"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 
 [YouTube-Extended]
