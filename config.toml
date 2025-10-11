@@ -45,7 +45,7 @@ cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 build-mode = "apk"
 arch = "both"
-excluded-patches = "'Dark theme'"
+excluded-patches = "'Custom branding icon for YouTube Music' 'Custom branding name for YouTube Music' 'Dark theme'"
 patcher-args = "-e 'GmsCore support' -OpackageNameYouTubeMusic=com.hiby.music"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 
