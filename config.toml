@@ -8,7 +8,7 @@ parallel-jobs = 1
 
 [YouTube]
 build-mode = "apk"
-excluded-patches = "'Theme'"
+excluded-patches = "'Custom branding' 'Theme'"
 included-patches = ""
 patcher-args = "-e 'Change package name' -OpackageName=cmccwm.mobilemusic"
 version = "auto"
