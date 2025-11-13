@@ -19,6 +19,7 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.y
 [Music]
 build-mode = "apk"
 arch = "arm64-v8a"
+excluded-patches = "'Custom branding' 'Theme'"
 patcher-args = "-e 'Change package name' -OpackageName=com.hiby.music"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
