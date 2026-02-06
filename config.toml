@@ -46,7 +46,7 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
 
 # https://github.com/j-hc/revanced-magisk-module/issues/554
 [Music-Extended]
-enabled = true
+enabled = false
 app-name = "Music"
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
